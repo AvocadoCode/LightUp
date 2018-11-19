@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape1">
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LightUp!"
+        android:textSize="30dp"
+        android:textColor="#3d3232"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/subjudul"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_height="wrap_content"
+        android:text="Pilih warna untuk menjadi senter layar!"
+        android:textSize="16dp"
+        android:textColor="#3d3232"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/white"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:onClick="white"/>
+
+        <TextView
+            android:id="@+id/yellow"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/white"
+            android:layout_marginTop="10dp"
+            android:background="#ffe70c"
+            android:onClick="yellow"/>
+
+        <TextView
+            android:id="@+id/blue"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/yellow"
+            android:layout_marginTop="10dp"
+            android:background="#d8fff6"
+            android:onClick="blue"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
